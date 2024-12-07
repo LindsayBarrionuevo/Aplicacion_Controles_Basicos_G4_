@@ -1,4 +1,3 @@
-import '../screens/menuscreen.dart';
 
 class Activity {
   int id;

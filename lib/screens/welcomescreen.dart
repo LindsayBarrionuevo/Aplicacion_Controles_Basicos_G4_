@@ -19,7 +19,7 @@ class PantallaLoginState extends State<PantallaLogin> {
       backgroundColor: Colors.green,
       body: Container(
         decoration: BoxDecoration(
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                   color: Colors.black54,
                   blurRadius: 50.0,
@@ -30,8 +30,8 @@ class PantallaLoginState extends State<PantallaLogin> {
             color: Colors.white,
             borderRadius: BorderRadius.circular(10)
         ),
-        margin: EdgeInsets.only(top: 50, left: 40, right: 40, bottom: 50),
-        padding: EdgeInsets.only(left: 10, right: 10),
+        margin: const EdgeInsets.only(top: 50, left: 40, right: 40, bottom: 50),
+        padding: const EdgeInsets.only(left: 10, right: 10),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -41,34 +41,34 @@ class PantallaLoginState extends State<PantallaLogin> {
                 height: 150,
                 child: Image.asset('assets/Logo_ESPE.png'),
               ),
-              SizedBox(height: 30),
-              Text(
+              const SizedBox(height: 30),
+              const Text(
                 "Universidad de las Fuerzas Armadas",
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
-              Text(
+              const Text(
                 "Departamento de Ciencias de la Computación",
                 style: TextStyle(fontSize: 16),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                   height: 20
               ),
-              Text(
+              const Text(
                 "Tarea/Res Controles Básicos",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                   height: 30
               ),
-              Text(
+              const Text(
                 "Lindsay Barrionuevo\nJuan Pablo Pinza\nJoel Rivera\nLeonardo Yaranga",
                 style: TextStyle(fontSize: 16),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                   height: 50
               ),
               Container(
@@ -82,7 +82,7 @@ class PantallaLoginState extends State<PantallaLogin> {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (_)=>Menu()));
                   },
-                  child: Text("Ir a Menú", style: TextStyle(color: Colors.white, fontSize: 20),
+                  child: const Text("Ir a Menú", style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 ),
               ),

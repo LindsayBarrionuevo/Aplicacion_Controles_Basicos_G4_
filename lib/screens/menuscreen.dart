@@ -8,27 +8,29 @@ import './Ejercicio5.dart';
 
 
 class Menu extends StatefulWidget {
+  const Menu({super.key});
+
   @override
   _MenuState createState() => _MenuState();
 }
 
 class _MenuState extends State<Menu> {
   final Map<int, Widget> exerciseScreens = {
-    1: ascii_ej1(),
-    //2: Ejercicio2(),
-    3: InsertMCDScreen(),
+    1: const ascii_ej1(),
+    2: const FactorialScreen(),
+    3: const InsertMCDScreen(),
     //4: Ejercicio4(),
-    //5: Ejercicio5(),
+    5: const PrimeSearcherScreen(),
   };
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Ejercicios Propuestos"),
+        title: const Text("Ejercicios Propuestos"),
         backgroundColor: Colors.white60,
       ),
-      backgroundColor: Color.fromARGB(255, 154, 198, 185),
+      backgroundColor: const Color.fromARGB(255, 154, 198, 185),
       body: Container(
 
         decoration: const BoxDecoration(
@@ -39,14 +41,14 @@ class _MenuState extends State<Menu> {
             ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
 
         child: GridView.builder(
-          padding: EdgeInsets.all(5),
+          padding: const EdgeInsets.all(5),
           itemCount: ActivityMenu.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
           ),
           itemBuilder: (context, index) {
             return Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
@@ -55,7 +57,7 @@ class _MenuState extends State<Menu> {
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 10.0,
                     spreadRadius: 0.5,
-                    offset: Offset(0.5, 0.5),
+                    offset: const Offset(0.5, 0.5),
                   ),
                 ],
               ),
@@ -69,7 +71,7 @@ class _MenuState extends State<Menu> {
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text("¡Ejercicio no disponible!")),
+                      const SnackBar(content: Text("¡Ejercicio no disponible!")),
                     );
                   }
                 },
@@ -80,7 +82,7 @@ class _MenuState extends State<Menu> {
                       width: 125,
                       height: 125,
                       child: Image.asset(
-                        'assets/' + ActivityMenu[index].photo,
+                        'assets/${ActivityMenu[index].photo}',
                       ),
                     ),
                     Text(ActivityMenu[index].name),

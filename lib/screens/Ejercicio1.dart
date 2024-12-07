@@ -2,7 +2,7 @@ import '../logic/ASCII_calculator.dart';
 import 'package:flutter/material.dart';
 
 class ascii_ej1 extends StatefulWidget {
-  const ascii_ej1({Key? key}) : super(key: key);
+  const ascii_ej1({super.key});
 
   @override
   _ascii_ej1State createState() => _ascii_ej1State();

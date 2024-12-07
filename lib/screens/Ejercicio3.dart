@@ -100,12 +100,12 @@ class _InsertMCDScreenState extends State<InsertMCDScreen> {
                       }
                     },
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
+                      backgroundColor: WidgetStateProperty.all(
                           const Color.fromARGB(255, 45, 105, 99)),
-                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      shape: WidgetStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       )),
-                      padding: MaterialStateProperty.all(
+                      padding: WidgetStateProperty.all(
                         const EdgeInsets.symmetric(
                             horizontal: 40, vertical: 15),
                       ),
