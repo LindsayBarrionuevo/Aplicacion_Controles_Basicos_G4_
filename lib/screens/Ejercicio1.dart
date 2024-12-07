@@ -20,15 +20,16 @@ class _ascii_ej1State extends State<ascii_ej1> {
           'ASCII',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: const Color.fromARGB(255, 58, 183, 64),
+        backgroundColor: const Color.fromARGB(255, 89, 148, 144),
         elevation: 0,
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color.fromARGB(255, 68, 183, 58),
-              Color.fromARGB(255, 64, 76, 251)
+              Color.fromARGB(255, 141, 198, 192),
+              Color.fromARGB(255, 89, 148, 144),
+              Color.fromARGB(255, 45, 105, 99)
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -58,7 +59,7 @@ class _ascii_ej1State extends State<ascii_ej1> {
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 73, 183, 58),
+                      color: Color.fromARGB(255, 45, 105, 99),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -67,7 +68,7 @@ class _ascii_ej1State extends State<ascii_ej1> {
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
-                        childAspectRatio: 4,
+                        childAspectRatio: 2,
                       ),
                       itemCount: asciiTable.length,
                       itemBuilder: (context, index) {

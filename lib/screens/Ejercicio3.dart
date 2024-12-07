@@ -22,15 +22,16 @@ class _InsertMCDScreenState extends State<InsertMCDScreen> {
           "Calcular MCD",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: const Color.fromARGB(255, 58, 183, 64),
+        backgroundColor: const Color.fromARGB(255, 104, 162, 158),
         elevation: 0,
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color.fromARGB(255, 68, 183, 58),
-              Color.fromARGB(255, 64, 76, 251)
+              Color.fromARGB(255, 180, 230, 225),
+              Color.fromARGB(255, 104, 162, 158),
+              Color.fromARGB(255, 45, 105, 99)
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -60,7 +61,7 @@ class _InsertMCDScreenState extends State<InsertMCDScreen> {
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 73, 183, 58),
+                      color: Color.fromARGB(255, 45, 105, 99),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -100,7 +101,7 @@ class _InsertMCDScreenState extends State<InsertMCDScreen> {
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
-                          const Color.fromARGB(255, 25, 134, 43)),
+                          const Color.fromARGB(255, 45, 105, 99)),
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       )),
@@ -130,10 +131,10 @@ class _InsertMCDScreenState extends State<InsertMCDScreen> {
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: const TextStyle(color: Color.fromARGB(255, 58, 183, 64)),
+        labelStyle: const TextStyle(color: Color.fromARGB(255, 45, 105, 99)),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: const BorderSide(color: Color.fromARGB(255, 58, 183, 64)),
+          borderSide: const BorderSide(color: Color.fromARGB(255, 123, 166, 161)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
@@ -142,10 +143,10 @@ class _InsertMCDScreenState extends State<InsertMCDScreen> {
         ),
         prefixIcon: const Icon(
           Icons.numbers,
-          color: Color.fromARGB(255, 58, 183, 64),
+          color: Color.fromARGB(255, 123, 166, 161),
         ),
         filled: true,
-        fillColor: const Color.fromARGB(255, 230, 245, 229),
+        fillColor: const Color.fromARGB(255, 234, 250, 248),
       ),
     );
   }
