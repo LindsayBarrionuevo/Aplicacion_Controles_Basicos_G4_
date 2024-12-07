@@ -14,9 +14,9 @@ class Menu extends StatefulWidget {
 
 class _MenuState extends State<Menu> {
   final Map<int, Widget> exerciseScreens = {
-    //1: Ejercicio1(),
+    1: ascii_ej1(),
     //2: Ejercicio2(),
-    //3: Ejercicio3(),
+    3: InsertMCDScreen(),
     //4: Ejercicio4(),
     //5: Ejercicio5(),
   };
